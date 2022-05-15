@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>一丨夢幻的疆界</title>
+    <style>
+      #base {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 1800px;
+        opacity: 1;
+        z-index:0;
+      }
+      #wall {
+        position: absolute;
+        top: 0px;
+        left: 1184px;
+        width: 616px;
+        opacity: 1;
+        z-index:0;
+        cursor:pointer;
+      }
+      #frame {
+        position: absolute;
+        top: 0px;
+        left: 1103px;
+        width: 78px;
+        opacity: 1;
+        z-index:1;
+        cursor:pointer;
+      }
+      #frame2 {
+        position: absolute;
+        top: 0px;
+        left: 1103px;
+        width: 78px;
+        opacity: 1;
+        z-index:1;
+        cursor:auto;
+        display:none;
+      }
+      #bed {
+        position: absolute;
+        top: 660px;
+        left: 190px;
+        width: 1550px;
+        opacity: 1;
+        z-index:1;
+        cursor:pointer;
+      }
+
+      #cloth {
+        position: absolute;
+        top: 625px;
+        left: 530px;
+        width: 1100px;
+        opacity: 1;
+        z-index:1;
+        cursor:pointer;
+      }
+
+      #pillow {
+        position: absolute;
+        top: 472px;
+        left:1175px;
+        width: 625px;
+        opacity: 1;
+        z-index:1;
+        cursor:pointer;
+      }
+
+      #girl {
+        position: absolute;
+        top: 640px;
+        left:900px;
+        width: 250px;
+        opacity: 1;
+        z-index:2;
+        cursor:pointer;
+        display:none;
+      }
+
+      #print1 {
+        position: absolute;
+        top: 300px;
+        left:300px;
+        width: 280px;
+        opacity: 1;
+        z-index:3;
+        cursor:pointer;
+        display:none;
+      }
+
+      #print2 {
+        position: absolute;
+        top: 180px;
+        left:1320px;
+        width: 350px;
+        opacity: 1;
+        z-index:3;
+        cursor:pointer;
+        display:none;
+      }
+
+      #text1 {
+        position: fixed;
+        top: 0px;
+        left:0px;
+        width: 350px;
+        opacity: 1;
+        z-index:3;
+        display:none;
+      }
+      #text2{
+        position: fixed;
+        top: 200px;
+        left:0px;
+        width: 350px;
+        opacity: 1;
+        z-index:3;
+        display:none;
+      }
+      #text3{
+        position: fixed;
+        top: 0px;
+        left:500px;
+        width: 380px;
+        opacity: 1;
+        z-index:3;
+        display:none;
+      }
+      #text4{
+        position: fixed;
+        top: 200px;
+        left:500px;
+        width: 380px;
+        opacity: 1;
+        z-index:3;
+        display:none;
+      }
+      #text5{
+        position: fixed;
+        top: 400px;
+        left:0px;
+        width: 350px;
+        opacity: 1;
+        z-index:3;
+        display:none;
+      }
+      #lotus{
+        position: fixed;
+        top: 4vh;
+        left:2vw;
+        width: 9%;
+        opacity: 1;
+        z-index:10;
+        cursor:pointer;
+      }
+      #lotus:hover{
+        position: fixed;
+        top: 4vh;
+        left:2vw;
+        width: 9.5%;
+        opacity: 1;
+        z-index:10;
+        cursor:pointer;
+      }
+      #tape{
+        position: fixed;
+        top: 400px;
+        left:500px;
+        width: 7%;
+        opacity: 1;
+        z-index:10;
+        cursor:pointer;
+        display:none;
+      }
+      #lyrics{
+        position: fixed;
+        bottom: 2vh;
+        left:0vw;
+        width: 100%;
+        opacity: 1;
+        z-index:10;
+
+        display:none;
+      }
+      #song {
+        color:pink;
+        opacity: 1;
+        z-index:3;
+        text-decoration: underline;
+        cursor:pointer;
+      }
+      audio {
+        display:none;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="01dream.js"></script>
+  </head>
+  <body>
+    <a href=home.html><img id=lotus img src="01dream/lotus.png"></a>
+    <img id=base img src="01dream/bg.jpg">
+    <img id=wall img src="01dream/wall.png">
+    <img id=frame img src="01dream/frame.png">
+    <img id=frame2 img src="01dream/frame2.png">
+    <img id=bed img src="01dream/bed.png">
+    <img id=cloth img src="01dream/cloth.png">
+    <img id=pillow img src="01dream/pillow.png">
+    <img id=girl img src="01dream/girl.png">
+    <img id=print1 img src="01dream/print1.jpg">
+    <img id=print2 img src="01dream/print2.jpg">
+    <img id="tape" img src="01dream/tape11.png" onclick="audio.play();">
+    <script type="text/javascript">
+      const audio = new Audio();
+      audio.src = "01dream/01.mp3";
+    </script>
+    <img id=lyrics img src="01dream/lyrics.png">
+    <div id=text1>墙（qiáng，ㄑㄧㄤˊ）<br></br>被漆成最最普通的米白色，上面挂着旧画。她的世界和她的房间一样，被分隔成墙里面和墙外面。就算是在那样一个柔软的世界，她还是和我一样，心里渴望着外面灼烫的太阳而裹足不前。</div>
+    <div id=text2>床（chuáng，ㄔㄨㄤˊ）<br></br>被褥柔软，带着曝晒后尘螨死掉的味道，躺下时人就陷下去，好像在融化和流淌。她躺在床上望着天花板，一直想一直想要怎么成为一个了不起的大人，一直也想不到，直到模糊地败给睡意。</div>
+    <div id=text3>枕头（zhěn tou，ㄓㄣˇ ·ㄊㄡ）<br></br>比起枕着，她更喜欢抱着。抱一个大大的、软软的枕头，就有了想象的权力，想象它是什么都可以。但她最常想到他。他抱起来大概没有这么软，但是忽略掉细节，这一时刻就变得甜蜜而悲哀。</div>
+    <div id=text4>旧衣服（jiù yī fú，ㄐㄧㄡˋ ㄧ ㄈㄨˊ）<br></br>已经是高中生了，还在穿几年前的衣服，她妈妈说既然还能穿下就不要浪费。她也有向往过学校里学姐穿的漂亮的外套，可是要她穿的话又会害羞，好像已经习惯了陈旧的安全感。</div>
+    <div id=text5>画（huà，ㄏㄨㄚˋ）<br></br>她不会画画。她和我有诸多不同，比我要柔软，也比我要怯懦。我渴望的那些美好的事情在她身上并没有发生，对我来说这才是那<span id=song>梦幻疆界</span>中最美妙的部分，我依旧求而不得。</div>
+  </body>
+</html>

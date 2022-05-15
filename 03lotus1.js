@@ -1,0 +1,25 @@
+$(document).ready(function(){
+  //alert("hi")
+  $("#xiaoyu1").click(function(){
+    	$("#body").show();
+    	});
+      $("#xiaoyu1").click(function(){
+        	$("#wound1").show();
+        	});
+  $("#wound1").click(function(){
+    	$("#wound2").show();
+    	});
+  $("#wound2").click(function(){
+      $("#wound3").show();
+    	});
+  $("#wound3").click(function(){
+      $("#wound4").show();
+      });
+  $("#wound4").click(function(){
+      $("#letter").show();
+      });
+      $("#wound4").click(function(){
+          $("#wound4").css("cursor","auto");
+          });
+
+})

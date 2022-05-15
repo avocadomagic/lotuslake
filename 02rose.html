@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>二丨蔷薇</title>
+    <style>
+
+      #bg {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        opacity: 1;
+        z-index:0;
+      }
+      #hole {
+        position: fixed;
+        top: 20px;
+        left: 35vw;
+        width: 33%;
+        opacity: 1;
+        z-index:3;
+        cursor:auto;
+      }
+      #hole2 {
+        position: fixed;
+        top: 20px;
+        left: 35vw;
+        width: 33%;
+        opacity: 1;
+        z-index:6;
+        cursor:auto;
+        display:none;
+      }
+      #girl {
+        position: fixed;
+        top:56vh;
+        left: 15vw;
+        width: 7%;
+        opacity: 1;
+        z-index:3;
+        cursor:pointer;
+      }
+      #girl2 {
+        position: fixed;
+        top:58vh;
+        left: 15vw;
+        width: 6.8%;
+        opacity: 1;
+        z-index:3;
+        cursor:pointer;
+        display:none;
+      }
+      #girl3 {
+        position: fixed;
+        top:66vh;
+        left: 15vw;
+        width: 6.8%;
+        opacity: 1;
+        z-index:3;
+        cursor:pointer;
+        display:none;
+      }
+      #girl4 {
+        position: fixed;
+        top:68vh;
+        left: 15vw;
+        width: 7%;
+        opacity: 1;
+        z-index:3;
+        cursor:pointer;
+        display:none;
+      }
+      #girl42 {
+        position: fixed;
+        top:68vh;
+        left: 15vw;
+        width: 7%;
+        opacity: 1;
+        z-index:3;
+        cursor:auto;
+        display:none;
+      }
+      #rose {
+        position: fixed;
+        top: 77vh;
+        left: 18vw;
+        width: 60%;
+        opacity: 1;
+        z-index:2;
+      }
+      #rabbit {
+        position:fixed;
+        top: 22vh;
+        left: 38vw;
+        width: 26%;
+        opacity: 1;
+        z-index:10;
+        display:none;
+      }
+      #lotus{
+        position: fixed;
+        top: 4vh;
+        left:2vw;
+        width: 9%;
+        opacity: 1;
+        z-index:10;
+        cursor:pointer;
+      }
+      #lotus:hover{
+        position: fixed;
+        top: 4vh;
+        left:2vw;
+        width: 9.5%;
+        opacity: 1;
+        z-index:10;
+        cursor:pointer;
+      }
+      #animation {
+        position: fixed;
+        top: 20px;
+        left: 35vw;
+        width: 33%;
+        opacity: 1;
+        z-index:5;
+        cursor:pointer;
+        display:none;
+      }
+      #text1 {
+        position: fixed;
+        top: 20px;
+        left: 35vw;
+        width: 33%;
+        opacity: 1;
+        z-index:6;
+        cursor:pointer;
+        display:none;
+      }
+      #text2 {
+        position: fixed;
+        top: 20px;
+        left: 35vw;
+        width: 33%;
+        opacity: 1;
+        z-index:6;
+        cursor:pointer;
+        display:none;
+      }
+      #text2 {
+        position: fixed;
+        top: 20px;
+        left: 35vw;
+        width: 33%;
+        opacity: 1;
+        z-index:6;
+        cursor:pointer;
+        display:none;
+      }
+      #one1{
+        position: fixed;
+        top: 23vh;
+        left:17vw;
+        opacity: 1;
+        z-index:10;
+        color:black;
+        display:none;
+      }
+      #one2{
+        position: fixed;
+        top: 23vh;
+        right:14vw;
+        opacity: 1;
+        z-index:10;
+        color:black;
+        display:none;
+      }
+      #two1{
+        position: fixed;
+        top: 27vh;
+        left:17vw;
+        opacity: 1;
+        z-index:10;
+        color:black;
+        display:none;
+      }
+      #two2{
+        position: fixed;
+        top: 23vh;
+        right:13vw;
+        opacity: 1;
+        z-index:10;
+        color:black;
+        display:none;
+      }
+      #three1{
+        position: fixed;
+        top: 31vh;
+        left:17vw;
+        opacity: 1;
+        z-index:10;
+        color:black;
+        display:none;
+      }
+      #three2{
+        position: fixed;
+        top: 23vh;
+        right:12vw;
+        opacity: 1;
+        z-index:10;
+        color:black;
+        display:none;
+      }
+      #four1{
+        position: fixed;
+        top: 35vh;
+        left:17vw;
+        opacity: 1;
+        z-index:10;
+        color:black;
+        display:none;
+      }
+      #four2{
+        position: fixed;
+        top: 23vh;
+        right:14vw;
+        opacity: 1;
+        z-index:10;
+        color:#922d51;
+        display:none;
+      }
+      #drawing1 {
+        position: fixed;
+        top: 16.8vh;
+        left: 4.5vw;
+        width:11.7%;
+        opacity: 1;
+        z-index:8;
+        cursor:pointer;
+        display:none;
+      }
+      #drawing2 {
+        position: fixed;
+        top: 5.5vh;
+        left: 86vw;
+        width:11%;
+        opacity: 1;
+        z-index:8;
+        cursor:pointer;
+        display:none;
+      }
+      #drawing11 {
+        position: fixed;
+        top: 11.4vh;
+        left: 30vw;
+        width:41.6%;
+        opacity: 1;
+        z-index:10;
+        cursor:pointer;
+        display:none;
+      }
+      #drawing22 {
+        position: fixed;
+        top: 8.6vh;
+        left: 33.6vw;
+        width:33%;
+        opacity: 1;
+        z-index:10;
+        cursor:pointer;
+display:none;
+      }
+      #drawinggg{
+        position: fixed;
+        top: 17vh;
+        left:39vw;
+        width: 23%;
+        opacity: 1;
+        z-index:7;
+        cursor:pointer;
+        display:none;
+      }
+      #lyrics1{
+        position: fixed;
+        top: 25vh;
+        left:20vw;
+        width: 18%;
+        opacity: 1;
+        z-index:9;
+display:none;
+      }
+      #lyrics2{
+        position: fixed;
+        top: 25vh;
+        left:64vw;
+        width: 18%;
+        opacity: 1;
+        z-index:9;
+display:none;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="02rose.js"></script>
+  </head>
+  <body>
+    <a href=home.html><img id=lotus img src="02rose/lotus.png"></a>
+    <img id=bg img src="02rose/bg1.jpg">
+    <img id=hole img src="02rose/hole.png">
+    <img id=girl img src="02rose/girl.png">
+    <img id=girl2 img src="02rose/girl2.png">
+    <img id=girl3 img src="02rose/girl3.png">
+    <img id=girl4 img src="02rose/girl4.png">
+    <img id=girl42 img src="02rose/girl42.png">
+    <img id=rose img src="02rose/rose.png">
+    <img id=hole2 img src="02rose/hole2.png">
+    <video id=rabbit video loop controls src="02rose/rabbit.mp4" type="video/mp4"></video>
+    <img id=animation img src="02rose/animation.gif">
+    <img id=text1 img src="02rose/text1.png">
+    <img id=text2 img src="02rose/text2.png">
+    <div id=one1>我......</div>
+    <div id=one2>找不到我的模样。</div>
+    <div id=two1>我......</div>
+    <div id=two2>被白色的茧包裹着。</div>
+    <div id=three1>我......</div>
+    <div id=three2>想要一直飞，却一直在下坠。</div>
+    <div id=four1>我......</div>
+    <div id=four2>是一朵蔷薇吗？</div>
+    <img id=drawing1 img src="02rose/drawing1.png">
+    <img id=drawing2 img src="02rose/drawing2.png">
+    <img id=drawing11 img src="02rose/drawing11.png">
+    <img id=drawing22 img src="02rose/drawing22.png">
+    <img id=lyrics1 img src="02rose/lyrics1.png">
+    <img id=lyrics2 img src="02rose/lyrics2.png">
+    <img id="drawinggg" img src="02rose/drawinggg.png" onclick="audio.play();">
+    <script type="text/javascript">
+      const audio = new Audio();
+      audio.src = "02rose/02.mp3";
+    </script>
+  </body>
+</html>

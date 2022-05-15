@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>三丨晚風吻盡荷花葉</title>
+    <style>
+      #base {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 105%;
+        opacity: 1;
+        z-index:0;
+      }
+      #poem1 {
+        position: absolute;
+        top: 21vh;
+        left: 15.5vw;
+        width: 34%;
+        opacity: 1;
+        z-index:1;
+        color:white;
+      }
+      #poem2 {
+        position: absolute;
+        top: 21vh;
+        left: 57.7vw;
+        width: 28.7%;
+        opacity: 1;
+        z-index:1;
+        color:white;
+      }
+      #sky {
+        position: fixed;
+        top: -9vh;
+        left: 0px;
+        width: 100%;
+        opacity: 1;
+        z-index:2;
+        cursor:move;
+      }
+      #ground {
+        position: fixed;
+        top: 13vh;
+        left: 0vw;
+        width: 102%;
+        opacity: 1;
+        z-index:2;
+        cursor:move;
+      }
+      #grass {
+        position: fixed;
+        bottom: 0vh;
+        left: 0vw;
+        width: 100%;
+        opacity: 1;
+        z-index:2;
+        cursor:move;
+      }
+      #men {
+        position:fixed;
+        top:48vh;
+        left: 15.5vw;
+        width: 11.5%;
+        opacity: 1;
+        z-index:4;
+        cursor:move;
+      }
+      #lake {
+        position: fixed;
+        top:60vh;
+        right:0vw;
+        width: 74%;
+        opacity: 1;
+        z-index:3;
+        cursor:move;
+      }
+      #xiaoyu2 {
+        position: fixed;
+        top:60vh;
+        left: 77vw;
+        width: 11.5%;
+        opacity: 1;
+        z-index:10;
+        cursor:move;
+      }
+      #backfire {
+        position:fixed;
+        top:60vh;
+        left: 39vw;
+        width: 56%;
+        opacity: 1;
+        z-index:4;
+        cursor:move;
+      }
+      #frontfire {
+        position: fixed;
+        bottom:7vh;
+        left: 9vw;
+        width: 47%;
+        opacity: 1;
+        z-index:2;
+        cursor:pointer;
+      }
+      #lotus{
+        position: fixed;
+        top: 4vh;
+        left:2vw;
+        width: 9%;
+        opacity: 1;
+        z-index:10;
+        cursor:pointer;
+      }
+      #lotus:hover{
+        position: fixed;
+        top: 4vh;
+        left:2vw;
+        width: 9.5%;
+        opacity: 1;
+        z-index:10;
+        cursor:pointer;
+      }
+      #tape{
+        position: fixed;
+        top: 53vh;
+        left: 57.7vw;
+        width: 7%;
+        opacity: 1;
+        z-index:1;
+        cursor:pointer;
+      }
+      #lyrics1{
+        position: fixed;
+        top: 21vh;
+        left: 0vw;
+        width:11%;
+        opacity: 1;
+        z-index:2;
+        display:none;
+      }
+      #lyrics2{
+        position: fixed;
+        top: 21vh;
+        right: 0vw;
+        width: 9%;
+        opacity: 1;
+        z-index:2;
+        display:none;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="03lotus.js"></script>
+  </head>
+  <body>
+    <a href=home.html><img id=lotus img src="03lotus/lotus.png"></a>
+    <img id=base img src="03lotus/ocean.gif">
+    <div id=poem1>被斩首的兄弟在夜中削去及肩长发<br>还是……莫非是<br>情人，秘密地。孑然<br>立在湖心的一角凉亭，他<br>躺在长长的板凳上，穿着红衣。<br>美丽的小百合隐没在夜色<br><br><br>你那可爱的面貌早已模糊成了爱的宗教符号。只有你在九百一十九个梦里都能义无反顾地奔向他；只有你的甜腥的爱欲早已被锁进他的勃起，一种文学性的悲恸。我同美丽的小百合一起碎裂在快乐的妒忌，溺亡于文学之不公。在教堂里，歌声洗去你们同被虚构的溃烂<br><br><br>他们偷情被枪毙了。<br>第二十五小时只是一种文艺女青年面对你笑起来眼角漂亮的褶皱时使用的共情修辞:<br><br>「发香/拾熟挺的穗子/鹿儿/发间插牵牛」<br><br><br><br><br><br></div>
+    <div id=poem2>于是，日光下有芽的音乐，美丽的<br>小百合像一只燕子<br>如愿了；雪白得像白色的雪<br>雏燕可以飞出那间暗室吗，可以飞出那艘大船吗，可以飞离那辆废铁火车吗，可以飞越母亲梦里的花林吗，可以飞过你罗曼蒂克的噩运<br><br><br><br>可以吗<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>「請帶著我一起飛」<br>他的求恳渐弱于春天筑巢的氤氲<br>百合播种<br>仿佛新的好年来了<br><br><br><br><br><br></div>
+    <img id=sky img src="03lotus/sky.png">
+    <img id=ground img src="03lotus/ground.png">
+    <img id=grass img src="03lotus/grass.png">
+    <img id=men img src="03lotus/men.gif">
+    <img id=xiaoyu2 img src="03lotus/xiaoyu2.png">
+    <img id=backfire img src="03lotus/backfire.png">
+    <a href=03lotus1.html><img id=frontfire img src="03lotus/frontfire.png"></a>
+    <img id=lake img src="03lotus/lake.png">
+    <img id=lyrics1 img src="03lotus/lyrics1.png">
+    <img id=lyrics2 img src="03lotus/lyrics2.png">
+    <img id="tape" img src="03lotus/tape.png" onclick="audio.play();">
+    <script type="text/javascript">
+      const audio = new Audio();
+      audio.src = "03lotus/03.mp3";
+    </script>
+  </body>
+</html>
